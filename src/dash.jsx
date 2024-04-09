@@ -2,12 +2,16 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
-  faHome,
-  faMap,
+  faUser,
+  faMapMarkedAlt,
   faPlaneDeparture,
   faGem,
-  faClock,
+  faMountain,
+  faMedal,
+  faHistory,
   faTimes,
+  faUsers,
+  faHotel,
 } from "@fortawesome/free-solid-svg-icons";
 
 function Dash() {
@@ -57,16 +61,16 @@ function Dash() {
         <ul className="p-4 mt-16">
           <li
             className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
-            onClick={() => handleMenuItemClick("Dashboard")}
+            onClick={() => handleMenuItemClick("Profile")}
           >
-            <FontAwesomeIcon icon={faHome} className="mr-2" />
-            <span>Dashboard</span>
+            <FontAwesomeIcon icon={faUser} className="mr-2" />
+            <span>Profile</span>
           </li>
           <li
             className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
             onClick={() => handleMenuItemClick("Map")}
           >
-            <FontAwesomeIcon icon={faMap} className="mr-2" />
+            <FontAwesomeIcon icon={faMapMarkedAlt} className="mr-2" />
             <span>Map</span>
           </li>
           <li
@@ -85,9 +89,37 @@ function Dash() {
           </li>
           <li
             className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
+            onClick={() => handleMenuItemClick("Off Beat Locations")}
+          >
+            <FontAwesomeIcon icon={faMountain} className="mr-2" />
+            <span>Off Beat Locations</span>
+          </li>
+          <li
+            className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
+            onClick={() => handleMenuItemClick("Achievements")}
+          >
+            <FontAwesomeIcon icon={faMedal} className="mr-2" />
+            <span>Achievements</span>
+          </li>
+          <li
+            className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
+            onClick={() => handleMenuItemClick("Curated Stays")}
+          >
+            <FontAwesomeIcon icon={faHotel} className="mr-2" />
+            <span>Curated Stay</span>
+          </li>
+          <li
+            className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
+            onClick={() => handleMenuItemClick("Community")}
+          >
+            <FontAwesomeIcon icon={faUsers} className="mr-2" />
+            <span>Community</span>
+          </li>
+          <li
+            className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
             onClick={() => handleMenuItemClick("Past Trips")}
           >
-            <FontAwesomeIcon icon={faClock} className="mr-2" />
+            <FontAwesomeIcon icon={faHistory} className="mr-2" />
             <span>Past Trips</span>
           </li>
         </ul>

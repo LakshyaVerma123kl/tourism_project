@@ -9,10 +9,15 @@ import SignUp from "./Signup";
 import About from "./about";
 import TeamMember from "./team";
 import Packages from "./Packages";
+import Destinations from "./Destinations";
+import Map from "./map";
+import Anda from "./Anda";
+import Dash from "./dash";
+import Template from "./template";
 function App() {
   return (
     <>
-      <Header />
+      <Map />
     </>
   );
 }

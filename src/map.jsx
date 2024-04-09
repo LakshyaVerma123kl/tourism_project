@@ -53,7 +53,7 @@ function Map() {
       </div>
 
       <button
-        className="w-48 rounded-lg bg-gray-200 text-teal-400 h-11 tracking-wide font-semibold
+        className="w-48 rounded-lg bg-gray-200 text h-11 tracking-wide font-semibold
         active:bg-gray-300 duration-300 hover:bg-gray-300 
         active:border-white shadow-lg mb-4"
         onClick={toggleStates}
