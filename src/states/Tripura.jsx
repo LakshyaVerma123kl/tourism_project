@@ -1,41 +1,41 @@
 import React from "react";
-import image1 from "./assets/Radhanagar.jpg";
-import image2 from "./assets/Celluarjail.jpg";
-import image3 from "./assets/Limestonecave.jpg";
+import image1 from "../assets/Neermahal.jpg";
+import image2 from "../assets/UjjayantaPalace.jpg";
+import image3 from "../assets/Unakoti.jpg";
 
-const Anda = () => {
+const Tripura = () => {
   const places = [
     {
-      name: "Radhanagar Beach",
+      name: "Neermahal",
       image: image1,
-      description: "Ranked as the #1 beach in Asia by Time Magazine in 2004",
+      description: "Water palace in the Rudrasagar Lake",
       speciality:
-        "Radhanagar Beach is a beautiful beach in Havelock Island, Andaman. It is famous for its crystal-clear turquoise waters and silky white sand as well as a breathtaking view.",
+        "Neermahal, meaning 'Water Palace', is a royal palace located in the middle of Rudrasagar Lake in Tripura. It was built in the 1930s as a summer resort for the royal family.",
     },
     {
-      name: "Cellular Jail",
+      name: "Ujjayanta Palace",
       image: image2,
-      description: "Symbol of India's struggle for independence",
+      description: "Palace turned into a museum in Agartala",
       speciality:
-        "Cellular Jail, also known as Kala Pani, is a colonial prison located in Port Blair, Andaman. It was used by the British to exile political prisoners.",
+        "Ujjayanta Palace, located in Agartala, is a historic palace that has been converted into a museum showcasing the cultural heritage of Tripura. It houses artifacts, sculptures, paintings, and royal regalia.",
     },
     {
-      name: "Limestone Caves",
+      name: "Unakoti",
       image: image3,
-      description: "Accessed by a boat ride through mangrove forests",
+      description: "Ancient rock-cut sculptures",
       speciality:
-        "Limestone Caves, located in Baratang Island, Andaman, are natural caves formed over centuries by the dissolution of limestone rocks. They are home to unique geological formations and stalactites.",
+        "Unakoti is an archaeological site known for its rock-cut sculptures dating back to the 7th–9th centuries CE. It features thousands of rock carvings and sculptures of Hindu deities and figures.",
     },
   ];
 
   return (
     <div className="container mx-auto mt-8 px-4">
       <h1 className="text-3xl font-bold mb-8 text-center">
-        Welcome to Andaman!
+        Welcome to Tripura!
       </h1>
       <p className="text-lg mb-6 text-center">
-        Andaman and Nicobar Islands, located in the Bay of Bengal, are known for
-        their breathtaking natural beauty and rich marine life.
+        Tripura, known for its rich cultural heritage and natural beauty, offers
+        a glimpse into the history and traditions of the region.
       </p>
 
       {/* Popular Places */}
@@ -61,4 +61,4 @@ const Anda = () => {
   );
 };
 
-export default Anda;
+export default Tripura;

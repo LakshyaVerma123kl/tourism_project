@@ -11,13 +11,13 @@ import TeamMember from "./team";
 import Packages from "./Packages";
 import Destinations from "./Destinations";
 import Map from "./map";
-import Anda from "./Anda";
+import Anda from "./states/Anda";
 import Dash from "./dash";
 import Template from "./template";
 function App() {
   return (
     <>
-      <Map />
+      <Anda />
     </>
   );
 }
