@@ -1,6 +1,6 @@
 import React from "react";
-import image1 from "../assets/MahabodhiTemple.jpg";
-import image2 from "../assets/NalandaUniversity.jpg";
+import image1 from "../assets/Mahabodhi.jpg";
+import image2 from "../assets/Nalanda.jpg";
 import image3 from "../assets/Vikramshila.jpg";
 
 const Bihar = () => {

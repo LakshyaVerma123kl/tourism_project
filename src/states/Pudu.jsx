@@ -1,6 +1,6 @@
 import React from "react";
 import image1 from "../assets/Auroville.jpg";
-import image2 from "../assets/PromenadeBeach.jpg";
+import image2 from "../assets/Promenade.jpeg";
 import image3 from "../assets/Arikamedu.jpg";
 
 const Puducherry = () => {

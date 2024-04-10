@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/IndiaGate.jpg";
-import image2 from "../assets/QutubMinar.jpg";
-import image3 from "../assets/LotusTemple.jpg";
+import image1 from "../assets/India.jpeg";
+import image2 from "../assets/Qutub.jpeg";
+import image3 from "../assets/Lotus.jpeg";
 
 const Delhi = () => {
   const places = [

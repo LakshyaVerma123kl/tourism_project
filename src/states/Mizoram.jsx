@@ -1,6 +1,6 @@
 import React from "react";
-import image1 from "../assets/DzukouValley.jpg";
-import image2 from "../assets/Aizawl.jpg";
+import image1 from "../assets/Dzukou.jpeg";
+import image2 from "../assets/Aizawl.jpeg";
 import image3 from "../assets/MurlenNationalPark.jpg";
 
 const Mizoram = () => {

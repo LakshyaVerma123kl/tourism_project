@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/BasilicaofBomJesus.jpg";
-import image2 from "../assets/CalanguteBeach.jpg";
-import image3 from "../assets/DudhsagarFalls.jpg";
+import image1 from "../assets/Basilica.jpeg";
+import image2 from "../assets/Calangute.jpg";
+import image3 from "../assets/Dudhsagar.jpg";
 
 const Goa = () => {
   const places = [

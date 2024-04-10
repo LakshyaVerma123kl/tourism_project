@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/MeenakshiTemple.jpg";
-import image2 from "../assets/Mahabalipuram.jpg";
-import image3 from "../assets/Ooty.jpg";
+import image1 from "../assets/Meenakshi.jpeg";
+import image2 from "../assets/Mahabali.jpeg";
+import image3 from "../assets/Ooty.jpeg";
 
 const TamilNadu = () => {
   const places = [

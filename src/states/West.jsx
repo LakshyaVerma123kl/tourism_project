@@ -1,6 +1,6 @@
 import React from "react";
-import image1 from "../assets/VictoriaMemorial.jpg";
-import image2 from "../assets/Sunderbans.jpg";
+import image1 from "../assets/Victoria.jpeg";
+import image2 from "../assets/Sunder.jpeg";
 import image3 from "../assets/Darjeeling.jpg";
 
 const WestBengal = () => {

@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/RannofKutch.jpg";
-import image2 from "../assets/GirForestNationalPark.jpg";
-import image3 from "../assets/SabarmatiAshram.jpg";
+import image1 from "../assets/Rann.jpg";
+import image2 from "../assets/Gir.jpg";
+import image3 from "../assets/Sabarmati.jpg";
 
 const Gujarat = () => {
   const places = [

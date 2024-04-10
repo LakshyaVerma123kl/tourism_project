@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/BetlaNationalPark.jpg";
-import image2 from "../assets/RanchiLake.jpg";
-import image3 from "../assets/JagannathTemple.jpg";
+import image1 from "../assets/Betla.jpeg";
+import image2 from "../assets/Ranchi.jpg";
+import image3 from "../assets/Jagannath.jpg";
 
 const Jharkhand = () => {
   const places = [

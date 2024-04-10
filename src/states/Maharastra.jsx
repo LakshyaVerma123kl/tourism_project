@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/ElephantaCaves.jpg";
-import image2 from "../assets/Mumbai.jpg";
-import image3 from "../assets/AjantaCaves.jpg";
+import image1 from "../assets/Elephanta.jpg";
+import image2 from "../assets/Mumbai.jpeg";
+import image3 from "../assets/Ajanta.jpg";
 
 const Maharashtra = () => {
   const places = [

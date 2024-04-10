@@ -1,5 +1,5 @@
 import React from "react";
-import image1 from "../assets/SultanpurNationalPark.jpg";
+import image1 from "../assets/Sultanpur.jpeg";
 import image2 from "../assets/Surajkund.jpg";
 import image3 from "../assets/Kurukshetra.jpg";
 

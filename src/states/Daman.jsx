@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/DadraGarden.jpg";
-import image2 from "../assets/DiuFort.jpg";
-import image3 from "../assets/NaniDamanBeach.jpg";
+import image1 from "../assets/Dadra.jpg";
+import image2 from "../assets/Diu.jpg";
+import image3 from "../assets/Nani.jpg";
 
 const DadraNagarHaveliDamanDiu = () => {
   const places = [

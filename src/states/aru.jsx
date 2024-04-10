@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/TawangMonastery.jpg";
-import image2 from "../assets/ZiroValley.jpg";
-import image3 from "../assets/SelaPass.jpg";
+import image1 from "../assets/Tawang.jpg";
+import image2 from "../assets/Ziro.jpg";
+import image3 from "../assets/Sela.jpeg";
 
 const ArunachalPradesh = () => {
   const places = [

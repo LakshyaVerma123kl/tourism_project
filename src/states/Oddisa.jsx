@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/KonarkSunTemple.jpg";
-import image2 from "../assets/JagannathTemple.jpg";
-import image3 from "../assets/ChilikaLake.jpg";
+import image1 from "../assets/Konark.jpeg";
+import image2 from "../assets/JagannathT.jpeg";
+import image3 from "../assets/Chilika.jpg";
 
 const Odisha = () => {
   const places = [

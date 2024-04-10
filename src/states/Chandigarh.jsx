@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/RockGarden.jpg";
-import image2 from "../assets/SukhnaLake.jpg";
-import image3 from "../assets/RoseGarden.jpg";
+import image1 from "../assets/Rock.jpg";
+import image2 from "../assets/Sukhna.jpeg";
+import image3 from "../assets/Rose.jpeg";
 
 const Chandigarh = () => {
   const places = [

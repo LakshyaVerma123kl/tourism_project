@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/AgattiIsland.jpg";
-import image2 from "../assets/KavarattiIsland.jpg";
-import image3 from "../assets/BangaramIsland.jpg";
+import image1 from "../assets/Agatti.jpg";
+import image2 from "../assets/Kavaratti.jpeg";
+import image3 from "../assets/Bangaram.jpg";
 
 const Lakshadweep = () => {
   const places = [

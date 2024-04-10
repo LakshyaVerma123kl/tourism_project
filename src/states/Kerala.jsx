@@ -1,16 +1,16 @@
 import React from "react";
-import image1 from "../assets/AllepeyBackwaters.jpg";
-import image2 from "../assets/Munnar.jpg";
-import image3 from "../assets/AthirappillyFalls.jpg";
+import image1 from "../assets/Alleppey.jpg";
+import image2 from "../assets/Munnar.jpeg";
+import image3 from "../assets/Athirappilly.jpeg";
 
 const Kerala = () => {
   const places = [
     {
-      name: "Allepey Backwaters",
+      name: "Alleppey Backwaters",
       image: image1,
       description: "Network of interconnected canals and lakes",
       speciality:
-        "The Allepey Backwaters are a network of interconnected canals, lakes, and rivers located in the Alappuzha district. It is a popular tourist destination known for its serene beauty and houseboat cruises.",
+        "The Alleppey Backwaters are a network of interconnected canals, lakes, and rivers located in the Alappuzha district. It is a popular tourist destination known for its serene beauty and houseboat cruises.",
     },
     {
       name: "Munnar",

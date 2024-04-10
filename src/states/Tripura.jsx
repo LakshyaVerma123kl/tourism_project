@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/Neermahal.jpg";
-import image2 from "../assets/UjjayantaPalace.jpg";
-import image3 from "../assets/Unakoti.jpg";
+import image1 from "../assets/Neer.jpeg";
+import image2 from "../assets/Ujjata.jpg";
+import image3 from "../assets/Unakoti.jpe";
 
 const Tripura = () => {
   const places = [

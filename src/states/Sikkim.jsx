@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/GurudongmarLake.jpg";
-import image2 from "../assets/NathuLaPass.jpg";
-import image3 from "../assets/RumtekMonastery.jpg";
+import image1 from "../assets/Gurudon.jpeg";
+import image2 from "../assets/Nathula.jpeg";
+import image3 from "../assets/Rumtek.jpeg";
 
 const Sikkim = () => {
   const places = [

@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/PangongLake.jpg";
-import image2 from "../assets/NubraValley.jpg";
-import image3 from "../assets/ThikseyMonastery.jpg";
+import image1 from "../assets/Pangong.jpg";
+import image2 from "../assets/Nubra.jpeg";
+import image3 from "../assets/Thiksey.jpg";
 
 const Ladakh = () => {
   const places = [

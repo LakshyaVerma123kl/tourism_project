@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/TirumalaTemple.jpg";
-import image2 from "../assets/Charminar.jpg";
-import image3 from "../assets/BorraCaves.jpg";
+import image1 from "../assets/Tiru.jpg";
+import image2 from "../assets/Char.jpeg";
+import image3 from "../assets/bor.jpeg";
 
 const AndhraPradesh = () => {
   const places = [

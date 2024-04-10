@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/LivingRootBridges.jpg";
-import image2 from "../assets/Cherrapunji.jpg";
-import image3 from "../assets/Mawlynnong.jpg";
+import image1 from "../assets/LivingRoot.jpg";
+import image2 from "../assets/Cherrapunji.jpeg";
+import image3 from "../assets/Mawlynnong.jpeg";
 
 const Meghalaya = () => {
   const places = [

@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/Charminar.jpg";
-import image2 from "../assets/GolkondaFort.jpg";
-import image3 from "../assets/RamojiFilmCity.jpg";
+import image1 from "../assets/Char.jpeg";
+import image2 from "../assets/Golkonda.jpg";
+import image3 from "../assets/Ramoji.jpeg";
 
 const Telangana = () => {
   const places = [

@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/LoktakLake.jpg";
-import image2 from "../assets/KeibulLamjaoNationalPark.jpg";
-import image3 from "../assets/KanglaFort.jpg";
+import image1 from "../assets/Loktak.jpg";
+import image2 from "../assets/Keibul.jpg";
+import image3 from "../assets/Kangla.jpeg";
 
 const Manipur = () => {
   const places = [

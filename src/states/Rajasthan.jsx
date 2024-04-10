@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/HawaMahal.jpg";
-import image2 from "../assets/AmberFort.jpg";
-import image3 from "../assets/Jaisalmer.jpg";
+import image1 from "../assets/Hawa.jpeg";
+import image2 from "../assets/Amber.jpeg";
+import image3 from "../assets/Jaisalmer.jpeg";
 
 const Rajasthan = () => {
   const places = [

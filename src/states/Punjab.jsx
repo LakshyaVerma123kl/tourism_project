@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/GoldenTemple.jpg";
-import image2 from "../assets/WagahBorder.jpg";
-import image3 from "../assets/JallianwalaBagh.jpg";
+import image1 from "../assets/Golden.jpeg";
+import image2 from "../assets/Wagah.jpg";
+import image3 from "../assets/Jallianwala.jpeg";
 
 const Punjab = () => {
   const places = [

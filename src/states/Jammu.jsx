@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "./assets/DalLake.jpg";
+import image1 from "./assets/Dal.jpg";
 import image2 from "./assets/Gulmarg.jpg";
-import image3 from "./assets/VaishnoDevi.jpg";
+import image3 from "./assets/Vaishno.jpg";
 
 const JammuAndKashmir = () => {
   const places = [

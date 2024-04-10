@@ -1,6 +1,6 @@
 import React from "react";
-import image1 from "../assets/RohtangPass.jpg";
-import image2 from "../assets/Shimla.jpg";
+import image1 from "../assets/Rohtang.jpg";
+import image2 from "../assets/Shimla.jpeg";
 import image3 from "../assets/Manali.jpg";
 
 const HimachalPradesh = () => {

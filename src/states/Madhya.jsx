@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/Khajuraho.jpg";
-import image2 from "../assets/BandhavgarhNationalPark.jpg";
-import image3 from "../assets/SanchiStupa.jpg";
+import image1 from "../assets/Khajuraho.jpeg";
+import image2 from "../assets/Bandhavgarh.jpeg";
+import image3 from "../assets/Sanchi.jpeg";
 
 const MadhyaPradesh = () => {
   const places = [

@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/BannerghattaNationalPark.jpg";
-import image2 from "../assets/MysorePalace.jpg";
-import image3 from "../assets/CubbonPark.jpg";
+import image1 from "../assets/Bannerghatta.jprg";
+import image2 from "../assets/Mysore.jpeg";
+import image3 from "../assets/Cubbon.jpg";
 
 const Karnataka = () => {
   const places = [

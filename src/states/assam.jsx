@@ -1,7 +1,7 @@
 import React from "react";
 import image1 from "../assets/Kaziranga.jpg";
 import image2 from "../assets/KamakhyaTemple.jpg";
-import image3 from "../assets/Majuli.jpg";
+import image3 from "../assets/Majuli.jpeg";
 
 const Assam = () => {
   const places = [

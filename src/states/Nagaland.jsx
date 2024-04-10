@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/DzukouValley.jpg";
+import image1 from "../assets/Dzukou.jpeg";
 import image2 from "../assets/Kohima.jpg";
-import image3 from "../assets/HornbillFestival.jpg";
+import image3 from "../assets/Hornbill.jpeg";
 
 const Nagaland = () => {
   const places = [

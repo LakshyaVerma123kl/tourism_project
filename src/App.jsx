@@ -11,13 +11,14 @@ import TeamMember from "./team";
 import Packages from "./Packages";
 import Destinations from "./Destinations";
 import Map from "./map";
-import Anda from "./states/Anda";
+import AndhraPradesh from "./states/Andra";
 import Dash from "./dash";
 import Template from "./template";
+import Team from "./team";
 function App() {
   return (
     <>
-      <Anda />
+      <Team />
     </>
   );
 }

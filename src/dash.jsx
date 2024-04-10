@@ -12,6 +12,8 @@ import {
   faTimes,
   faUsers,
   faHotel,
+  faCalendarAlt,
+  faHeadset,
 } from "@fortawesome/free-solid-svg-icons";
 
 function Dash() {
@@ -114,6 +116,20 @@ function Dash() {
           >
             <FontAwesomeIcon icon={faUsers} className="mr-2" />
             <span>Community</span>
+          </li>
+          <li
+            className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
+            onClick={() => handleMenuItemClick("Events")}
+          >
+            <FontAwesomeIcon icon={faCalendarAlt} className="mr-2" />
+            <span>Events</span>
+          </li>
+          <li
+            className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
+            onClick={() => handleMenuItemClick("Customer Support")}
+          >
+            <FontAwesomeIcon icon={faHeadset} className="mr-2" />
+            <span>Customer Support</span>
           </li>
           <li
             className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
