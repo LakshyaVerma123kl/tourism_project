@@ -15,10 +15,12 @@ import AndhraPradesh from "./states/Andra";
 import Dash from "./dash";
 import Template from "./template";
 import Team from "./team";
+import Anda from "./states/Anda";
+import Delhi from "./states/Delhi";
 function App() {
   return (
     <>
-      <Team />
+      <Delhi />
     </>
   );
 }

@@ -4,6 +4,9 @@ import image2 from "./assets/Gulmarg.jpg";
 import image3 from "./assets/Vaishno.jpg";
 
 const JammuAndKashmir = () => {
+  const handleClick = () => {
+    alert("You clicked on View Details!");
+  };
   const places = [
     {
       name: "Dal Lake",
@@ -52,9 +55,15 @@ const JammuAndKashmir = () => {
             <div className="bg-white rounded-lg p-4 shadow-md">
               <p className="text-xl font-semibold mb-2">{place.name}</p>
               <p className="text-sm mb-4">{place.description}</p>
-              <p className="text-xs text-gray-600 hover:text-teal-400 transition-colors duration-300">
+              <p className="text-xs text-gray-600 hover:text-teal-400 transition-colors duration-300 mb-2">
                 {place.speciality}
               </p>
+              <button
+                onClick={handleClick}
+                className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              >
+                View Details
+              </button>
             </div>
           </div>
         ))}
