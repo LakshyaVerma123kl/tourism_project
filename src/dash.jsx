@@ -19,6 +19,7 @@ import {
 
 function Dash() {
   const [isOpen, setIsOpen] = useState(true);
+  const [activeItem, setActiveItem] = useState("Profile"); // Initially set to "Profile"
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -29,6 +30,7 @@ function Dash() {
   };
 
   const handleMenuItemClick = (itemName) => {
+    setActiveItem(itemName); // Update active item when a menu item is clicked
     alert(`You have clicked on ${itemName}`);
   };
 
@@ -65,61 +67,73 @@ function Dash() {
           <MenuItem
             icon={faUser}
             itemName="Profile"
+            isActive={activeItem === "Profile"} // Check if the item is active
             onClick={handleMenuItemClick}
           />
           <MenuItem
             icon={faMapMarkedAlt}
             itemName="Map"
+            isActive={activeItem === "Map"} // Check if the item is active
             onClick={handleMenuItemClick}
           />
           <MenuItem
             icon={faPlaneDeparture}
             itemName="Upcoming Trips"
+            isActive={activeItem === "Upcoming Trips"} // Check if the item is active
             onClick={handleMenuItemClick}
           />
           <MenuItem
             icon={faGem}
             itemName="Curated Options"
+            isActive={activeItem === "Curated Options"} // Check if the item is active
             onClick={handleMenuItemClick}
           />
           <MenuItem
             icon={faMountain}
             itemName="Off Beat Locations"
+            isActive={activeItem === "Off Beat Locations"} // Check if the item is active
             onClick={handleMenuItemClick}
           />
           <MenuItem
             icon={faMedal}
             itemName="Achievements"
+            isActive={activeItem === "Achievements"} // Check if the item is active
             onClick={handleMenuItemClick}
           />
           <MenuItem
             icon={faHotel}
             itemName="Curated Stay"
+            isActive={activeItem === "Curated Stay"} // Check if the item is active
             onClick={handleMenuItemClick}
           />
           <MenuItem
             icon={faGlobe}
             itemName="Culture Connect"
+            isActive={activeItem === "Culture Connect"} // Check if the item is active
             onClick={handleMenuItemClick}
           />
           <MenuItem
             icon={faUsers}
             itemName="Community"
+            isActive={activeItem === "Community"} // Check if the item is active
             onClick={handleMenuItemClick}
           />
           <MenuItem
             icon={faCalendarAlt}
             itemName="Events"
+            isActive={activeItem === "Events"} // Check if the item is active
             onClick={handleMenuItemClick}
           />
           <MenuItem
             icon={faHeadset}
             itemName="Customer Support"
+            isActive={activeItem === "Customer Support"} // Check if the item is active
             onClick={handleMenuItemClick}
           />
           <MenuItem
             icon={faHistory}
             itemName="Past Trips"
+            isActive={activeItem === "Past Trips"} // Check if the item is active
             onClick={handleMenuItemClick}
           />
         </ul>
@@ -149,10 +163,14 @@ function Dash() {
 }
 
 // Reusable menu item component
-const MenuItem = ({ icon, itemName, onClick }) => {
+const MenuItem = ({ icon, itemName, isActive, onClick }) => {
   return (
     <li
-      className="py-[.70rem] flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
+      className={`py-[.71rem] flex items-center cursor-pointer ${
+        isActive
+          ? "bg-gray-100 bg-opacity-20 pl-1"
+          : "hover:bg-gray-100 hover:bg-opacity-20"
+      } rounded-md`}
       onClick={() => onClick(itemName)}
     >
       <FontAwesomeIcon icon={icon} className="mr-2" />
