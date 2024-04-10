@@ -23,13 +23,10 @@ const Input = ({ label, type, name, value, onChange, placeholder }) => (
 function SignUp() {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    fullName: "",
     email: "",
     username: "",
     password: "",
-    confirmPassword: "",
-    gender: "",
   });
 
   const handleChange = (e) => {
@@ -57,32 +54,26 @@ function SignUp() {
           Sign Up
         </h2>
         <form onSubmit={handleSubmit}>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
+          <div className="mb-6">
             <Input
-              label="First Name"
+              label="Full Name"
               type="text"
-              name="firstName"
-              value={formData.firstName}
+              name="fullName"
+              value={formData.fullName}
               onChange={handleChange}
-              placeholder="Enter your first name"
-            />
-            <Input
-              label="Last Name"
-              type="text"
-              name="lastName"
-              value={formData.lastName}
-              onChange={handleChange}
-              placeholder="Enter your last name"
+              placeholder="Enter your name"
             />
           </div>
-          <Input
-            label="Email"
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Enter your email"
-          />
+          <div className="mb-6">
+            <Input
+              label="Email"
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Enter your email"
+            />
+          </div>
           <Input
             label="Username"
             type="text"
@@ -108,35 +99,7 @@ function SignUp() {
               {showPassword ? "Hide" : "Show"}
             </button>
           </div>
-          <Input
-            label="Confirm Password"
-            type={showPassword ? "text" : "password"}
-            name="confirmPassword"
-            value={formData.confirmPassword}
-            onChange={handleChange}
-            placeholder="*********"
-          />
 
-          <div>
-            <label
-              className="block text-teal-900 text-sm font-semibold mb-2"
-              htmlFor="gender"
-            >
-              Gender
-            </label>
-            <select
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-teal-900 leading-tight focus:outline-none focus:shadow-outline"
-              id="gender"
-              name="gender"
-              value={formData.gender}
-              onChange={handleChange}
-            >
-              <option value="">Select</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
           <div className="mb-6">
             <button
               className="bg-teal-500 hover:bg-teal-700 text-white font-semibold py-2 px-4 rounded my-4 w-full lg:w-auto focus:outline-none focus:shadow-outline transition-colors duration-300"
