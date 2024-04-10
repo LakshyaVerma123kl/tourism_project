@@ -14,6 +14,7 @@ import {
   faHotel,
   faCalendarAlt,
   faHeadset,
+  faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
 
 function Dash() {
@@ -36,7 +37,7 @@ function Dash() {
       {/* open button */}
       {!isOpen && (
         <button
-          className="absolute top-5 left-5 z-10 bg-teal-600 text-white px-4 py-2 rounded-md shadow-md"
+          className="absolute top-3 left-3 z-10 bg-teal-600 text-white px-4 py-2 rounded-md shadow-md"
           onClick={toggleMenu}
         >
           <FontAwesomeIcon icon={faBars} />
@@ -52,7 +53,7 @@ function Dash() {
         {/* Close button */}
         {isOpen && (
           <button
-            className="absolute top-5 right-5 z-10 bg-teal-600 text-white px-4 py-2 rounded-md shadow-md"
+            className="absolute top-2 right-3 z-10 bg-teal-600 text-white px-4 py-2 rounded-md shadow-md"
             onClick={closeMenu}
           >
             <FontAwesomeIcon icon={faTimes} />
@@ -60,84 +61,67 @@ function Dash() {
         )}
 
         {/* Menu items */}
-        <ul className="p-4 mt-16">
-          <li
-            className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
-            onClick={() => handleMenuItemClick("Profile")}
-          >
-            <FontAwesomeIcon icon={faUser} className="mr-2" />
-            <span>Profile</span>
-          </li>
-          <li
-            className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
-            onClick={() => handleMenuItemClick("Map")}
-          >
-            <FontAwesomeIcon icon={faMapMarkedAlt} className="mr-2" />
-            <span>Map</span>
-          </li>
-          <li
-            className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
-            onClick={() => handleMenuItemClick("Upcoming Trips")}
-          >
-            <FontAwesomeIcon icon={faPlaneDeparture} className="mr-2" />
-            <span>Upcoming Trips</span>
-          </li>
-          <li
-            className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
-            onClick={() => handleMenuItemClick("Curated Options")}
-          >
-            <FontAwesomeIcon icon={faGem} className="mr-2" />
-            <span>Curated Options</span>
-          </li>
-          <li
-            className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
-            onClick={() => handleMenuItemClick("Off Beat Locations")}
-          >
-            <FontAwesomeIcon icon={faMountain} className="mr-2" />
-            <span>Off Beat Locations</span>
-          </li>
-          <li
-            className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
-            onClick={() => handleMenuItemClick("Achievements")}
-          >
-            <FontAwesomeIcon icon={faMedal} className="mr-2" />
-            <span>Achievements</span>
-          </li>
-          <li
-            className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
-            onClick={() => handleMenuItemClick("Curated Stays")}
-          >
-            <FontAwesomeIcon icon={faHotel} className="mr-2" />
-            <span>Curated Stay</span>
-          </li>
-          <li
-            className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
-            onClick={() => handleMenuItemClick("Community")}
-          >
-            <FontAwesomeIcon icon={faUsers} className="mr-2" />
-            <span>Community</span>
-          </li>
-          <li
-            className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
-            onClick={() => handleMenuItemClick("Events")}
-          >
-            <FontAwesomeIcon icon={faCalendarAlt} className="mr-2" />
-            <span>Events</span>
-          </li>
-          <li
-            className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
-            onClick={() => handleMenuItemClick("Customer Support")}
-          >
-            <FontAwesomeIcon icon={faHeadset} className="mr-2" />
-            <span>Customer Support</span>
-          </li>
-          <li
-            className="py-3 flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
-            onClick={() => handleMenuItemClick("Past Trips")}
-          >
-            <FontAwesomeIcon icon={faHistory} className="mr-2" />
-            <span>Past Trips</span>
-          </li>
+        <ul className="p-4 mt-12">
+          <MenuItem
+            icon={faUser}
+            itemName="Profile"
+            onClick={handleMenuItemClick}
+          />
+          <MenuItem
+            icon={faMapMarkedAlt}
+            itemName="Map"
+            onClick={handleMenuItemClick}
+          />
+          <MenuItem
+            icon={faPlaneDeparture}
+            itemName="Upcoming Trips"
+            onClick={handleMenuItemClick}
+          />
+          <MenuItem
+            icon={faGem}
+            itemName="Curated Options"
+            onClick={handleMenuItemClick}
+          />
+          <MenuItem
+            icon={faMountain}
+            itemName="Off Beat Locations"
+            onClick={handleMenuItemClick}
+          />
+          <MenuItem
+            icon={faMedal}
+            itemName="Achievements"
+            onClick={handleMenuItemClick}
+          />
+          <MenuItem
+            icon={faHotel}
+            itemName="Curated Stay"
+            onClick={handleMenuItemClick}
+          />
+          <MenuItem
+            icon={faGlobe}
+            itemName="Culture Connect"
+            onClick={handleMenuItemClick}
+          />
+          <MenuItem
+            icon={faUsers}
+            itemName="Community"
+            onClick={handleMenuItemClick}
+          />
+          <MenuItem
+            icon={faCalendarAlt}
+            itemName="Events"
+            onClick={handleMenuItemClick}
+          />
+          <MenuItem
+            icon={faHeadset}
+            itemName="Customer Support"
+            onClick={handleMenuItemClick}
+          />
+          <MenuItem
+            icon={faHistory}
+            itemName="Past Trips"
+            onClick={handleMenuItemClick}
+          />
         </ul>
       </div>
 
@@ -163,5 +147,18 @@ function Dash() {
     </div>
   );
 }
+
+// Reusable menu item component
+const MenuItem = ({ icon, itemName, onClick }) => {
+  return (
+    <li
+      className="py-[.70rem] flex items-center cursor-pointer hover:bg-gray-100 hover:bg-opacity-20 rounded-md"
+      onClick={() => onClick(itemName)}
+    >
+      <FontAwesomeIcon icon={icon} className="mr-2" />
+      <span>{itemName}</span>
+    </li>
+  );
+};
 
 export default Dash;

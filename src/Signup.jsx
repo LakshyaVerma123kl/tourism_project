@@ -29,7 +29,6 @@ function SignUp() {
     username: "",
     password: "",
     confirmPassword: "",
-    dob: "",
     gender: "",
   });
 
@@ -91,13 +90,6 @@ function SignUp() {
             value={formData.username}
             onChange={handleChange}
             placeholder="Enter your username"
-          />
-          <Input
-            label="Date of Birth"
-            type="date"
-            name="dob"
-            value={formData.dob}
-            onChange={handleChange}
           />
           <div className="mb-4 relative">
             <Input
