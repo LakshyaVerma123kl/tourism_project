@@ -24,6 +24,7 @@ const Logintemplate = () => {
       for (let i in formdata) {
         // console.log(i);
         if (formdata[i].trim() === "") {
+          setfield(false);
           return;
         }
       }
