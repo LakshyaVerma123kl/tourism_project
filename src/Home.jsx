@@ -8,6 +8,7 @@ import image3 from "./assets/Agra.jpg";
 import image4 from "./assets/Punjab.jpg";
 import image5 from "./assets/Tamilnadu.jpg";
 import image6 from "./assets/Ladakh.jpg";
+import Section from "./section";
 
 // Array of images with their source, alt text, and caption
 const images = [
@@ -30,7 +31,7 @@ const PictureCarousel = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    className: "w-2/3 mx-auto max-w-screen-lg",
+    className: "w-full",
     arrows: true,
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
@@ -45,16 +46,9 @@ const PictureCarousel = () => {
   };
 
   return (
-    <div className="bg-[#F5F5DC] px-4 py-8">
+    <div className="w-full text-md font-semibold max-sm:space-y-10 text-gray-400">
       {/* Header section */}
-      <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold mb-2 text-teal-600">
-          Explore Beautiful Places
-        </h1>
-        <p className="text-lg text-taupe-600 font-semibold">
-          Discover stunning destinations across India.
-        </p>
-      </div>
+
       {/* Slider component */}
       <Slider {...settings}>
         {/* Mapping through images and rendering each as a slide */}
@@ -67,20 +61,32 @@ const PictureCarousel = () => {
           />
         ))}
       </Slider>
+      <Section />
     </div>
   );
 };
 
 // Component for individual image slide
 const ImageSlide = ({ src, alt, caption }) => (
-  <div className="h-64 overflow-hidden rounded-lg shadow-lg relative">
+  <div
+    id="cont"
+    className={`h-[27rem] w-full overflow-hidden shadow-lg relative`}
+  >
+    <div className="text-center absolute font-bold top-5 left-0 right-0 z-20">
+      <h1 className="text-[6rem] max-sm:text-2xl font-bold mb-2 text-opacity-50 text-gray-200">
+        Explore Beautiful Places
+      </h1>
+      <p className="text-lg text-taupe-600 text-opacity-50 font-semibold">
+        Discover stunning destinations across India.
+      </p>
+    </div>
     <img
       src={src}
       alt={alt}
       className="w-full h-full object-cover transition-transform duration-500 transform hover:scale-105"
     />
     {/* Caption overlay */}
-    <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white text-center">
+    <div className="absolute bottom-10 left-0 right-0 p-4 text-white text-4xl font-bold text-center">
       <p>{caption}</p>
     </div>
   </div>

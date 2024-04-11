@@ -12,7 +12,7 @@ const AboutSection = ({ title, content }) => (
 
 function About() {
   return (
-    <div className="flex justify-center mt-12">
+    <div className="flex justify-center my-12">
       {/* Grid layout for the About page sections */}
       <div className="grid grid-cols-2 gap-6 lg:gap-8">
         {/* About section */}

@@ -5,24 +5,24 @@ import image3 from "./assets/cuisine.jpg";
 import image4 from "./assets/Heritage.jpg";
 
 const HomeSection = ({ title, description, longDescription, imageUrl }) => (
-  <div className="flex flex-col items-center justify-center bg-[#F5F5DC] rounded-lg shadow-lg p-6 md:p-8 max-w-md mx-auto mb-8 transition duration-300 transform hover:shadow-xl">
-    <img src={imageUrl} alt={title} className="w-32 h-32 rounded-full mb-4" />
-    <h3 className="text-2xl font-bold text-teal-600 mb-2">{title}</h3>
-    <p className="text-gray-800 text-center mb-4 hover:text-teal-600">
+  <div className="flex flex-col items-center w-[29rem] m-4 justify-start hover:cursor-pointer rounded-lg shadow-lg pb-5 transition duration-300 transform hover:shadow-xl">
+    <img src={imageUrl} alt={title} className="w-full mb-4" />
+    <h3 className="text-2xl font-bold text-teal-600 mb-2 px-2">{title}</h3>
+    <p className="text-gray-800 text-center mb-4 hover:text-teal-600 px-2">
       {description}
     </p>
-    <p className="text-gray-700 text-center hover:text-teal-600">
+    <p className="text-gray-700 text-center hover:text-teal-600 px-2">
       {longDescription}
     </p>
   </div>
 );
 
 const FeaturesBox = () => (
-  <div className="bg-[#F5F5DC] rounded-lg shadow-lg p-6 md:p-8 max-w-md mx-auto mb-8 transition duration-300 transform hover:shadow-xl">
-    <h3 className="text-2xl font-bold text-teal-600 mb-4">
+  <div className="bg-gray-50 my-auto rounded-lg shadow-lg px-10 mx-auto max-sm:w-full text-left py-[1rem] transition duration-300 transform hover:shadow-xl">
+    <h3 className=" text-[4.5rem] font-black text-teal-600 text-opacity-50 mb-4">
       Features after Login
     </h3>
-    <ul className="text-gray-800 space-y-2">
+    <ul className="text-gray-800 space-y-5 px-5">
       <li className="hover:text-teal-600">
         Access to exclusive travel guides.
       </li>
@@ -53,7 +53,7 @@ const FeaturesBox = () => (
 );
 
 const Section = () => (
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-4 mx-4 md:mx-10 lg:mx-20">
+  <div className="flex flex-wrap justify-evenly py-5">
     <HomeSection
       title="Adventure"
       description="Embark on thrilling adventures across India's diverse landscapes."

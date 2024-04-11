@@ -20,7 +20,7 @@ function Footer() {
   };
 
   return (
-    <div className="flex items-center w-full bg-[#8B8589] rounded-md justify-around flex-wrap p-10">
+    <div className="flex items-center w-full bg-gray-50 rounded-md justify-around flex-wrap p-10">
       <div>
         <b>Stay Connected</b>
         <p>Follow us on social media for updates, tips, and more!</p>

@@ -9,7 +9,8 @@ const statesAndUTs = [
   "Bihar",
   "Chandigarh",
   "Chhattisgarh",
-  "Dadra and Nagar Haveli and Daman and Diu",
+  "Dadra and Nagar Haveli",
+  "Daman and Diu",
   "Delhi",
   "Goa",
   "Gujarat",
@@ -58,7 +59,7 @@ const Destinations = () => {
   };
 
   return (
-    <div className="bg-gray-100 p-4 rounded-lg shadow-md">
+    <div className=" absolute top-1.5 z-20 bg-white rounded-xl right-[4rem]">
       <div className="relative">
         <input
           type="text"

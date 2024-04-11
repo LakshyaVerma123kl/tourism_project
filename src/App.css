@@ -1,9 +1,17 @@
 #root {
-  width: 100dvw;
+  max-width: 100dvw;
   margin: 0;
   padding: 0;
   text-align: center;
   height: 100dvh;
+}
+
+#cont {
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  /* height:  150px;
+  width: 300px; */
+  /* overflow-y: scroll; */
 }
 
 .logo {

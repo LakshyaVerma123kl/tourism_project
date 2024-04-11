@@ -69,7 +69,7 @@ function Team() {
   ];
 
   return (
-    <div className="team-container h-[45rem] flex flex-wrap justify-center items-center mx-5">
+    <div className="team-container h-[45rem] my-10 flex flex-wrap justify-center items-center mx-5">
       <div className="team-wrapper grid grid-cols-2 gap-4">
         {teamMembers.map((member, index) => (
           <TeamMember key={index} {...member} />

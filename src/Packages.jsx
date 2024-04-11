@@ -5,16 +5,14 @@ import image3 from "./assets/cuisine.jpg";
 import image4 from "./assets/Heritage.jpg";
 
 const PackageCard = ({ title, description, destinations, imageUrl }) => (
-  <div className="max-w-md rounded-lg overflow-hidden shadow-lg bg-yellow-200 mx-auto transition duration-300 ease-in-out transform hover:shadow-xl">
+  <div className="rounded-lg overflow-hidden shadow-lg text-md font-semibold bg-gray-200 w-full m-4 transition duration-300 ease-in-out transform hover:shadow-xl">
     <img className="w-full h-64 object-cover" src={imageUrl} alt={title} />
-    <div className="px-6 py-4">
-      <div className="font-bold text-xl mb-2 text-center cursor-default hover:cursor-pointer">
+    <div className="px-6 py-4 opacity-50 hover:opacity-100">
+      <div className="font-black text-5xl mb-2 text-teal-500 text-center cursor-default hover:cursor-pointer">
         {title}
       </div>
-      <p className="text-gray-700 text-base text-center hover:text-teal-600 cursor-pointer">
-        {description}
-      </p>
-      <p className="text-gray-700 text-base mt-2 text-center hover:text-teal-600 cursor-pointer">
+      <p className="text-gray-500 text-center cursor-pointer">{description}</p>
+      <p className="text-gray-500 mt-2 text-center cursor-pointer">
         Destinations: {destinations.join(", ")}
       </p>
     </div>
@@ -27,7 +25,7 @@ const PackageCard = ({ title, description, destinations, imageUrl }) => (
 );
 
 const PackagesPage = () => (
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-8 mx-auto max-w-7xl">
+  <div className="flex flex-wrap justify-evenly items-center mb-10">
     <PackageCard
       title="Adventure Package"
       description="Embark on thrilling adventures across India's diverse landscapes."

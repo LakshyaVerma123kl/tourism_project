@@ -1,63 +1,59 @@
 import React from "react";
 import image from "./assets/mylogo.jpg";
+import { NavLink } from "react-router-dom";
+import Slider from "./Slider";
+import { useNavigate } from "react-router-dom";
+import Destinations from "./Destinations";
 
 function Header() {
+  const navigate = useNavigate();
   const handleLoginButtonClick = () => {
     alert(`Clicked Login`);
   };
 
-  const handleNavButtonClick = (text) => {
-    alert(`Clicked ${text}`);
-  };
-
   return (
-    <div className="bg-[#008080] p-4 flex flex-col md:flex-row justify-between items-center shadow-md">
-      <div className="flex items-center justify-center md:justify-start">
-        <img
-          src={image}
-          alt="logo"
-          className="w-[150px] h-[48px] rounded-full"
-        />
+    <div className="bg-[#008080] py-1 mb-[1px] max-sm:py-3 px-3 flex flex-row max-sm:px-5 justify-between items-center">
+      <div className="flex items-center justify-center md:justify-start max-sm:hidden">
+        <img src={image} alt="logo" className="w-[7rem] h-auto rounded-full" />
       </div>
-      <div className="text-white font-sans text-lg flex justify-center space-x-8 md:justify-center md:space-x-4">
-        <button
-          className="nav-button"
-          onClick={() => handleNavButtonClick("Home")}
+      <Slider />
+      <div className="text-white font-sans max-sm:hidden text-md font-semibold flex justify-center space-x-15 md:space-x-4">
+        <NavLink
+          to="/layout"
+          className={({ isActive }) =>
+            `nav-button ${isActive ? "text-black" : ""}`
+          }
         >
           <span>Home</span>
-        </button>
-        <button
-          className="nav-button"
-          onClick={() => handleNavButtonClick("Explore Destination")}
-        >
-          <span>Explore Destination</span>
-        </button>
-        <button
-          className="nav-button"
-          onClick={() => handleNavButtonClick("Packages")}
+        </NavLink>
+        <NavLink
+          to="/layout/packages"
+          className={({ isActive }) =>
+            `nav-button ${isActive ? "text-black" : ""}`
+          }
         >
           <span>Packages</span>
-        </button>
-        <button
-          className="nav-button"
-          onClick={() => handleNavButtonClick("Team")}
+        </NavLink>
+        <NavLink
+          to="/layout/team"
+          className={({ isActive }) =>
+            `nav-button ${isActive ? "text-black" : ""}`
+          }
         >
           <span>Team</span>
-        </button>
-        <button
-          className="nav-button"
-          onClick={() => handleNavButtonClick("About")}
+        </NavLink>
+        <NavLink
+          to="/layout/about"
+          className={({ isActive }) =>
+            `nav-button ${isActive ? "text-black" : ""}`
+          }
         >
           <span>About</span>
-        </button>
+        </NavLink>
       </div>
-      <div className="flex items-center justify-center md:justify-end mt-4 md:mt-0">
-        <button
-          className="login-button px-4 py-2 bg-white text-[#008080] rounded-md hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-white"
-          onClick={handleLoginButtonClick}
-        >
-          <span>Login/Sign Up</span>
-        </button>
+      <div className="items-center">
+        <Destinations />
+        <div className="w-[2rem] h-[2rem] rounded-full bg-slate-100"></div>
       </div>
     </div>
   );
