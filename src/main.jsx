@@ -10,6 +10,9 @@ import About from "./about.jsx";
 import SignUp from "./sign_UP.jsx";
 import Layout from "./layout.jsx";
 import FSignin from "./finalSign_In.jsx";
+import CulturalPlaces from "./cultural.jsx";
+import AdventurousPlaces from "./adventure.jsx";
+import SpiritualPlaces from "./spiritual.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,12 +32,24 @@ const router = createBrowserRouter([
         element: <Layout />,
         children: [
           {
-            path: "",
+            path: "home",
             element: <PictureCarousel />,
           },
           {
             path: "packages",
             element: <PackagesPage />,
+          },
+          {
+            path: "adventure",
+            element: <AdventurousPlaces />,
+          },
+          {
+            path: "cultural",
+            element: <CulturalPlaces />,
+          },
+          {
+            path: "spiritual",
+            element: <SpiritualPlaces />,
           },
           {
             path: "team",

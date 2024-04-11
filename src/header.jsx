@@ -17,11 +17,11 @@ function Header() {
         <img src={image} alt="logo" className="w-[7rem] h-auto rounded-full" />
       </div>
       <Slider />
-      <div className="text-white font-sans max-sm:hidden text-md font-semibold flex justify-center space-x-15 md:space-x-4">
+      <div className=" font-sans max-sm:hidden text-md font-semibold flex justify-center space-x-15 md:space-x-4">
         <NavLink
-          to="/layout"
+          to="/layout/home"
           className={({ isActive }) =>
-            `nav-button ${isActive ? "text-black" : ""}`
+            `nav-button ${isActive ? "text-black" : "text-white"}`
           }
         >
           <span>Home</span>
@@ -29,7 +29,7 @@ function Header() {
         <NavLink
           to="/layout/packages"
           className={({ isActive }) =>
-            `nav-button ${isActive ? "text-black" : ""}`
+            `nav-button ${isActive ? "text-black" : "text-white"}`
           }
         >
           <span>Packages</span>
@@ -37,7 +37,7 @@ function Header() {
         <NavLink
           to="/layout/team"
           className={({ isActive }) =>
-            `nav-button ${isActive ? "text-black" : ""}`
+            `nav-button ${isActive ? "text-black" : "text-white"}`
           }
         >
           <span>Team</span>
@@ -45,7 +45,7 @@ function Header() {
         <NavLink
           to="/layout/about"
           className={({ isActive }) =>
-            `nav-button ${isActive ? "text-black" : ""}`
+            `nav-button ${isActive ? "text-black" : "text-white"}`
           }
         >
           <span>About</span>

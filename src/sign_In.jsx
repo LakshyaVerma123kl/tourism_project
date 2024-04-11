@@ -46,7 +46,7 @@ const Signintemplate = () => {
       //     }
       //     return;
       //   }
-      navigate("/layout");
+      navigate("/layout/home");
     }
   };
 
